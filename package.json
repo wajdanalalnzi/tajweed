@@ -1,0 +1,12 @@
+{
+  "name": "tajweed-encyclopedia",
+  "version": "2.0.0",
+  "description": "موسوعة التجويد — تطبيق ويب ثابت لتعلّم أحكام التجويد برواية حفص",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/validate.js",
+    "start": "npx --yes serve -l 8080 .",
+    "screenshots": "node scripts/screenshots.js"
+  },
+  "license": "MIT"
+}

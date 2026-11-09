@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>موسوعة التجويد</title>
+  <meta name="description" content="تعلّم أحكام تجويد القرآن الكريم برواية حفص: مسار تعليمي مرتّب، المصحف كاملًا بالرسم العثماني مع تلوين الأحكام، شرح عند اللمس، تلاوات صوتية، اختبارات وتدريبات.">
+  <meta name="theme-color" content="#0f6e56">
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    /* تطبيق السمة قبل الرسم لتجنّب الوميض */
+    try { var t = localStorage.getItem('tajweed:theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <!--
+    The page shell. Script order matters (see bottom): data files, then
+    store.js, ayah.js and finally app.js which renders pages into #view.
+    #sidenav (desktop) and #bottomnav (mobile) are filled by app.js.
+    #sheet is the "tap to explain" bottom sheet controlled by ayah.js.
+  -->
+  <a class="skip-link" href="#view">تخطَّ إلى المحتوى</a>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="#/" aria-label="الرئيسية"><span class="mark" aria-hidden="true"><svg viewBox="0 0 512 512"><g fill="#d9b35c"><rect x="116" y="116" width="280" height="280" rx="18"/><rect x="116" y="116" width="280" height="280" rx="18" transform="rotate(45 256 256)"/></g><path d="M256 214C222 192 176 188 140 198V318C176 308 222 312 256 334C290 312 336 308 372 318V198C336 188 290 192 256 214Z" fill="#0f6e56"/><path d="M256 214V334" stroke="#d9b35c" stroke-width="8"/><g stroke-width="12" stroke-linecap="round"><path d="M168 236H230" stroke="#e8705f"/><path d="M168 266H230" stroke="#fffdf8"/><path d="M282 236H344" stroke="#fffdf8"/><path d="M282 266H344" stroke="#7fdcbb"/></g></svg></span><span>موسوعة التجويد</span></a>
+      <span class="spacer"></span>
+      <a class="icon-btn" href="#/search" aria-label="بحث" title="بحث"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+      <button class="icon-btn" id="theme-toggle" aria-label="تبديل الوضع الليلي" title="الوضع الليلي"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </header>
+    <div class="shell">
+      <nav class="sidenav" id="sidenav" aria-label="التنقل"></nav>
+      <main id="view" tabindex="-1"></main>
+    </div>
+    <nav class="bottomnav" id="bottomnav" aria-label="التنقل السفلي"></nav>
+  </div>
+
+  <div class="sheet-backdrop" id="sheet-backdrop"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" tabindex="-1"></div>
+
+  <script src="js/data/rules.js"></script>
+  <script src="js/data/chapters.js"></script>
+  <script src="js/data/quizzes.js"></script>
+  <script src="js/data/glossary.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ayah.js"></script>
+  <script src="js/mushaf.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

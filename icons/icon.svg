@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- App icon: open mushaf whose lines are in tajweed rule colours, on a gold eight-point star. Original artwork for this project. -->
+  <rect width="512" height="512" rx="116" fill="#0f6e56"/>
+  <g fill="#d9b35c"><rect x="116" y="116" width="280" height="280" rx="18"/><rect x="116" y="116" width="280" height="280" rx="18" transform="rotate(45 256 256)"/></g><path d="M256 214C222 192 176 188 140 198V318C176 308 222 312 256 334C290 312 336 308 372 318V198C336 188 290 192 256 214Z" fill="#0f6e56"/><path d="M256 214V334" stroke="#d9b35c" stroke-width="8"/><g stroke-width="12" stroke-linecap="round"><path d="M168 236H230" stroke="#e8705f"/><path d="M168 266H230" stroke="#fffdf8"/><path d="M282 236H344" stroke="#fffdf8"/><path d="M282 266H344" stroke="#7fdcbb"/></g>
+</svg>
